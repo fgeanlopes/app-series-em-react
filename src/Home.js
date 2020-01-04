@@ -1,33 +1,38 @@
 import React, {Component}  from 'react';
 
+import {Link} from 'react-router-dom'
+import api from './Api';
+
 // Importa o arquivo criado "api" (abre a conexao local host)
 // import api from "./Api";
 
 class Home extends Component{
     //setando propriedades e status no state
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //     genres: [],
-    //     isLoading: false
-    //     };
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+        genres: [],
+        isLoading: false
+        };
+    }
 
     // trabalha para carregar informação da pagina
-    // componentDidMount() {
-    //     this.setState({ isLoading: true });
-    //     api.loadGenres().then(res => {
-    //         this.setState({
-    //         isLoading: false,
-    //         genres: res.data
-    //         });
-    //     });
-    // }
+    componentDidMount() {
+        this.setState({ isLoading: true });
+
+        //Esta vindo da Api.js
+        api.loadGenres().then(res => {
+            this.setState({
+            isLoading: false,
+            genres: res.data
+            });
+        });
+    }
     //busca as categorias 
-    renderGenreLink(genres) {
+    renderGenreLink(genre) {
         return (
-            <span>
-            &nbsp;<a href="">{genres}</a>&nbsp;
+            <span key={genre}>
+                &nbsp;<Link to={`/series/${genre}`}>{genre}</Link>
             </span>
         );
     }
@@ -37,20 +42,19 @@ class Home extends Component{
         <div>
             <section id="intro" className="intro-section">
                 <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                    <h1>
-                        <img src="images/logo.png" />
-                    </h1>
-                    <p>
-                        Nunca mais esqueça uma série que você assistiu ou que alguém
-                        lhe indicou.
-                    </p>
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <img src="images/logo.png" />
+                            <p>
+                                Nunca mais esqueça uma série que você assistiu ou que alguém
+                                lhe indicou.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                </div>
             </section>
-            <section>
+            <section className='categorias'>
+                Escolha a categoria
                 {this.state.isLoading && (
                     <span className="carregando">Aguarde carregando</span>
                 )}

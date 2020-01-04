@@ -2,17 +2,22 @@
 import React, { Component } from "react";
 
 // import para trabalhar com rotas
+// Route ==> Não sei ao certo, Rotas em geral
+// Route ==> Não sei ao certo tbm
+// Link ==> Para trabalgar com links "a href"
 import {
   BrowserRouter as Router, Route, Link
 } from 'react-router-dom'
 
 //Puxa informação da home, arquivo home.js
 import Home from "./Home";
+import Series from "./Series";
 import NewSeries from "./NewSeries";
 
 //funcional-staless compoment
 const About = () => <section className="intro-section"><h1>Sobre</h1></section>
 
+//Componente da tela que ira rendenizar
 class App extends Component {
   render() {
     return (
@@ -41,7 +46,9 @@ class App extends Component {
                 </li>
               </ul>
             </div>
+            {/* Mostra apenas o conteudo exato */}
             <Route exact path='/' component = {Home}/>
+            <Route path='/series/:genre' component = {Series}/>
             <Route exact path='/about' component = {About}/>
             <Route exact path='/new' component = {NewSeries}/>
           </div>
@@ -52,4 +59,5 @@ class App extends Component {
   }
 }
 
+//Deixa o conteudo disponivel para outras funções
 export default App;

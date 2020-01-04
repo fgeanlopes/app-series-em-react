@@ -1,5 +1,5 @@
 {
-  "series":[
+  "series": [
     {
       "id": 1,
       "name": "How I met your mother",
@@ -12,7 +12,7 @@
       "name": "Friends",
       "status": "watching",
       "genre": "Comédia",
-      "current":{
+      "current": {
         "episode": "01",
         "season": "09"
       },
@@ -31,9 +31,75 @@
       "status": "toWatch",
       "genre": "Drama",
       "comments": "Galera fala bem"
+    },
+    {
+      "name": "teste 1",
+      "status": "watched",
+      "genre": "Ação",
+      "comments": "teste comment",
+      "id": 5
+    },
+    {
+      "name": "teste 2",
+      "status": "watched",
+      "genre": "Ação",
+      "comments": "comment",
+      "id": 6
+    },
+    {
+      "name": "teste 4",
+      "status": "watching",
+      "genre": "Ação",
+      "comments": "teste 4",
+      "id": 7
+    },
+    {
+      "name": "teste 5",
+      "status": "toWatch",
+      "genre": "Ação",
+      "comments": "teste 5",
+      "id": 8
+    },
+    {
+      "name": "bla bla bla",
+      "status": "watched",
+      "genre": "Terror",
+      "comments": "é isso",
+      "id": 9
+    },
+    {
+      "name": "Bla 2",
+      "status": "watching",
+      "genre": "Terror",
+      "comments": "é isso",
+      "id": 10
+    },
+    {
+      "name": "Bla 2",
+      "status": "watching",
+      "genre": "Terror",
+      "comments": "é isso",
+      "id": 11
+    },
+    {
+      "name": "Bolo da maria",
+      "status": "watched",
+      "genre": "Terror",
+      "comments": "bololo",
+      "id": 12
+    },
+    {
+      "name": "eita show",
+      "status": "watched",
+      "genre": "Terror",
+      "comments": "bluu",
+      "id": 13
     }
   ],
-  "genres":[
-    "Comédia", "Drama", "Ação"
+  "genres": [
+    "Comédia",
+    "Drama",
+    "Ação",
+    "Terror"
   ]
 }
