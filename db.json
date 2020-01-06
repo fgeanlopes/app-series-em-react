@@ -1,99 +1,25 @@
 {
   "series": [
     {
-      "id": 1,
-      "name": "How I met your mother",
+      "name": "teste 1 drama ",
+      "status": "watching",
+      "genre": "Terror",
+      "comments": "teste drama ",
+      "id": 1
+    },
+    {
+      "name": "sdsfsaf",
       "status": "watched",
       "genre": "Comédia",
-      "comments": "Muito bom"
+      "comments": "",
+      "id": 3
     },
     {
-      "id": 2,
-      "name": "Friends",
-      "status": "watching",
-      "genre": "Comédia",
-      "current": {
-        "episode": "01",
-        "season": "09"
-      },
-      "comments": "Bom para descontrair"
-    },
-    {
-      "id": 3,
-      "name": "Breaking Bad",
+      "name": "tetea",
       "status": "watched",
       "genre": "Drama",
-      "comments": "Say My Name - melhor cena"
-    },
-    {
-      "id": 4,
-      "name": "Better Call Saul",
-      "status": "toWatch",
-      "genre": "Drama",
-      "comments": "Galera fala bem"
-    },
-    {
-      "name": "teste 1",
-      "status": "watched",
-      "genre": "Ação",
-      "comments": "teste comment",
-      "id": 5
-    },
-    {
-      "name": "teste 2",
-      "status": "watched",
-      "genre": "Ação",
-      "comments": "comment",
-      "id": 6
-    },
-    {
-      "name": "teste 4",
-      "status": "watching",
-      "genre": "Ação",
-      "comments": "teste 4",
-      "id": 7
-    },
-    {
-      "name": "teste 5",
-      "status": "toWatch",
-      "genre": "Ação",
-      "comments": "teste 5",
-      "id": 8
-    },
-    {
-      "name": "bla bla bla",
-      "status": "watched",
-      "genre": "Terror",
-      "comments": "é isso",
-      "id": 9
-    },
-    {
-      "name": "Bla 2",
-      "status": "watching",
-      "genre": "Terror",
-      "comments": "é isso",
-      "id": 10
-    },
-    {
-      "name": "Bla 2",
-      "status": "watching",
-      "genre": "Terror",
-      "comments": "é isso",
-      "id": 11
-    },
-    {
-      "name": "Bolo da maria",
-      "status": "watched",
-      "genre": "Terror",
-      "comments": "bololo",
-      "id": 12
-    },
-    {
-      "name": "eita show",
-      "status": "watched",
-      "genre": "Terror",
-      "comments": "bluu",
-      "id": 13
+      "comments": "",
+      "id": 4
     }
   ],
   "genres": [

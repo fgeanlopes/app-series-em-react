@@ -18,19 +18,24 @@ class Home extends Component{
 
     // trabalha para carregar informação da pagina
     componentDidMount() {
+
+        // é true enquanto carrefa;
         this.setState({ isLoading: true });
 
         //Esta vindo da Api.js
         api.loadGenres().then(res => {
             this.setState({
+            genres: res.data,
+            //Quando acaba de carregar, seta false
             isLoading: false,
-            genres: res.data
             });
         });
     }
     //busca as categorias 
     renderGenreLink(genre) {
         return (
+            //Gera link de categoria usando genre passado por parametro, 
+            //vindo do banco
             <span key={genre}>
                 &nbsp;<Link to={`/series/${genre}`}>{genre}</Link>
             </span>
@@ -44,7 +49,7 @@ class Home extends Component{
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <img src="images/logo.png" />
+                            <img src="/images/logo.png" />
                             <p>
                                 Nunca mais esqueça uma série que você assistiu ou que alguém
                                 lhe indicou.

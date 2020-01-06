@@ -10,17 +10,26 @@ const api = axios.create({
 //Pega o genres(Categorias) no banco
 export const loadGenres = () => api.get("genres");
 
-// Buscando series relacionado a categoria no banco
+// Buscando series relacionado a categoria no banco com metodo get
 export const loadSeriesByGenre = (genre) => api.get('series?genre='+genre)
 
-// Pega as informações passada pelo newSeries e salva no banco em 'series'
+// Pega as informações passada pelo newSeries e salva 
+//no banco com metodo post, salva em 'series'
 export const saveSeries = (newSeries) => api.post('series', newSeries)
+
+//busca informacao no banco e apaga usando metodo delete
+export const deleteSeries = (id) => api.delete("series/"+id)
+
+//buscando dados para editar
+export const loadSeriesById = (id) => api.get('series/'+id)
 
 
 const apis = {
-  loadGenres: loadGenres,
-  saveSeries: saveSeries,
-  loadSeriesByGenre: loadSeriesByGenre
+  loadGenres,
+  saveSeries,
+  loadSeriesByGenre,
+  deleteSeries,
+  loadSeriesById
 };
 
 // exportando para a utilizacao

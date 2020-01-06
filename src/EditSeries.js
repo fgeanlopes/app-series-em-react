@@ -9,7 +9,7 @@ const statuses={
     'toWatch' : 'Assistir',
 }
 
-class NewSeries extends Component{
+class EditSeries extends Component{
     
     //setando propriedades e status no state
     constructor(props) {
@@ -25,6 +25,7 @@ class NewSeries extends Component{
     // trabalha para carregar informação da pagina
     componentDidMount() {
         this.setState({ isLoading: true });
+        api.loadSeriesById()
         api.loadGenres().then(res => {
             this.setState({
             isLoading: false,
@@ -96,4 +97,4 @@ class NewSeries extends Component{
         )
     }
 }
-export default NewSeries;
+export default EditSeries;
