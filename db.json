@@ -1,13 +1,6 @@
 {
   "series": [
     {
-      "name": "teste 1 drama ",
-      "status": "watching",
-      "genre": "Terror",
-      "comments": "teste drama ",
-      "id": 1
-    },
-    {
       "name": "sdsfsaf",
       "status": "watched",
       "genre": "Comédia",
@@ -15,11 +8,11 @@
       "id": 3
     },
     {
+      "id": 4,
       "name": "tetea",
       "status": "watched",
-      "genre": "Drama",
-      "comments": "",
-      "id": 4
+      "genre": "Comédia",
+      "comments": "Eita doido"
     }
   ],
   "genres": [

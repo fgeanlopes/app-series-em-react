@@ -49,7 +49,7 @@ class App extends Component {
             </div>
             {/* Mostra apenas o conteudo exato */}
             <Route exact path='/' component = {Home}/>
-            <Route path='/series/edit/:id' component = {EditSeries}/>
+            <Route path='/series-edit/:id' component = {EditSeries}/>
             <Route path='/series/:genre' component = {Series}/>
             <Route exact path='/about' component = {About}/>
             <Route exact path='/new' component = {NewSeries}/>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import api from './Api'
+import {Link} from 'react-router-dom'
 
 //Traduzir os termos de status
 const statuses={
@@ -31,7 +32,7 @@ class Series extends Component{
     // Carrega json de series do banco
     loadData(){
         this.setState({ isLoading: true });
-        // Ele acessa a url e busca a categoria no banco
+        // Ele acessa a url e busca o parametro
         api.loadSeriesByGenre(this.props.match.params.genre).then(res => {
             this.setState({
             isLoading: false,
@@ -64,7 +65,7 @@ class Series extends Component{
                                 </p>
                             </div>
                             <div className="col-xs-12 col-md-6">
-                                <a className="btn btn-success" href="">Editar</a>
+                                <Link className="btn btn-success" to={'/series-edit/'+series.id}>Editar</Link>
                                 <a className="btn btn-success" onClick={()=> this.deleteSeries(series.id)}>Excluir</a>
                             </div>
                         </div>

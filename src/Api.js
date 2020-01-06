@@ -17,6 +17,9 @@ export const loadSeriesByGenre = (genre) => api.get('series?genre='+genre)
 //no banco com metodo post, salva em 'series'
 export const saveSeries = (newSeries) => api.post('series', newSeries)
 
+// Update series
+export const updateSeries = (series) => api.put('series/'+series.id, series)
+
 //busca informacao no banco e apaga usando metodo delete
 export const deleteSeries = (id) => api.delete("series/"+id)
 
@@ -27,6 +30,7 @@ export const loadSeriesById = (id) => api.get('series/'+id)
 const apis = {
   loadGenres,
   saveSeries,
+  updateSeries,
   loadSeriesByGenre,
   deleteSeries,
   loadSeriesById

@@ -17,7 +17,8 @@ class EditSeries extends Component{
         this.state = {
         genres: [],
         isLoading: false,
-        redirect: false
+        redirect: false,
+        series:{},
         };
         this.saveSeries = this.saveSeries.bind(this);
     }
@@ -25,7 +26,17 @@ class EditSeries extends Component{
     // trabalha para carregar informação da pagina
     componentDidMount() {
         this.setState({ isLoading: true });
-        api.loadSeriesById()
+        api.loadSeriesById(this.props.match.params.id).then((res)=>{
+            //Pega o data e coloca no res
+            this.setState({series: res.data})
+
+            // Define o dado para o resf
+            this.refs.name.value = this.state.series.name
+            this.refs.genre.value=  this.state.series.genre
+            this.refs.comments.value=  this.state.series.comments
+            this.refs.status.value= this.state.series.status
+        })
+            
         api.loadGenres().then(res => {
             this.setState({
             isLoading: false,
@@ -38,13 +49,16 @@ class EditSeries extends Component{
     saveSeries(){
         //Ao executar, cria um objeto.
         const NewSeries={
+            // Pega id por paramentro para salvar o novo conteudo
+            id: this.props.match.params.id,
+            
             // Busca os refs que foram atritubiidas ao formulario
             name:this.refs.name.value,
             status:this.refs.status.value,
             genre:this.refs.genre.value,
             comments:this.refs.comments.value
         }
-        api.saveSeries(NewSeries).then((res)=> {
+        api.updateSeries(NewSeries).then((res)=> {
             //Quando for salvo, ira fazer 
             //redirecionamento para a pagina
             //de categoria cadastrada
@@ -60,8 +74,8 @@ class EditSeries extends Component{
             <div>
                <section className="intro-section">
                 { this.state.redirect && <Redirect to={this.state.redirect}/> }
-                   <h1>Nova Série</h1>
-                   <form>
+                    <h1>Editar Serie</h1>
+                    <form>
                         <div>
                             {/* tag ref serve de referencia para o campo (indentificacao) */}
                             Nome:<input type="text" ref="name" className="form-control"></input>
@@ -91,7 +105,7 @@ class EditSeries extends Component{
                             {/* Ao clicar executa a funcao saveSeries */}
                             <button type="button" onClick={this.saveSeries}>Salvar</button>
                         </div>
-                   </form>
+                    </form>
                 </section> 
             </div>
         )
