@@ -37,27 +37,19 @@ class Home extends Component{
             //Gera link de categoria usando genre passado por parametro, 
             //vindo do banco
             <span key={genre}>
-                &nbsp;<Link to={`/series/${genre}`}>{genre}</Link>
+                <Link to={`/series/${genre}`}>{genre}</Link>
             </span>
         );
     }
     //rendezinar o componente 
     render(){
         return(
-        <div>
-            <section id="intro" className="intro-section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <img src="/images/logo.png" />
-                            <p>
-                                Nunca mais esqueça uma série que você assistiu ou que alguém
-                                lhe indicou.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div className="home">
+            <section>
+                <img className="banner-home" src="/images/logo.png" />
+                <p>Nunca mais esqueça uma série que você assistiu ou que alguém lhe indicou.</p>
             </section>
+
             <section className='categorias'>
                 Escolha a categoria
                 {this.state.isLoading && (

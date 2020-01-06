@@ -57,39 +57,38 @@ class NewSeries extends Component{
     render(){
         return(
             <div>
-               <section className="intro-section">
+               <section className="nova-serie">
                 { this.state.redirect && <Redirect to={this.state.redirect}/> }
-                   <h1>Nova Série</h1>
+                   <h1 className="titulo-seccao">Nova Série</h1>
                    <form>
-                        <div>
-                            {/* tag ref serve de referencia para o campo (indentificacao) */}
-                            Nome:<input type="text" ref="name" className="form-control"></input>
+                        <div className="item-form">
+                            <p>Nome:</p>
+                            <input type="text" ref="name" className="form-control"></input>
                         </div>
-                        <div>
-                            Status:
-                            <select ref="status" >
-                                {/* Acessa o objeto lista todo o seu conteudo */}
-                                {Object
-                                    .keys(statuses)
-                                    .map(key => <option key={key} value={key}>{statuses[key]}</option>)
-                                }
-                            </select>
+                        <div className="item-form status-genero">
+                            <div className="status">
+                                <p>Status:</p>
+                                <select ref="status" >
+                                    {/* Acessa o objeto lista todo o seu conteudo */}
+                                    {Object
+                                        .keys(statuses)
+                                        .map(key => <option key={key} value={key}>{statuses[key]}</option>)
+                                    }
+                                </select>
+                            </div>
+                            <div className="genero">
+                                <p>Gênero:</p>
+                                <select ref="genre">
+                                    {this.state.genres
+                                        .map(key => <option  key={key} value={key}>{key}</option>)
+                                    }
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            Gênero:
-                            <select ref="genre">
-                                {this.state.genres
-                                    .map(key => <option  key={key} value={key}>{key}</option>)
-                                }
-                            </select>
+                        <div className="item-form">
+                            <p>Comentários</p><textarea ref="comments" className="form-control"></textarea>
                         </div>
-                        <div>
-                            Comentários<textarea ref="comments" className="form-control"></textarea>
-                        </div>
-                        <div>
-                            {/* Ao clicar executa a funcao saveSeries */}
-                            <button type="button" onClick={this.saveSeries}>Salvar</button>
-                        </div>
+                        <button type="button" onClick={this.saveSeries}>Salvar</button>
                    </form>
                 </section> 
             </div>

@@ -14,9 +14,9 @@ import Home from "./Home";
 import Series from "./Series";
 import NewSeries from "./NewSeries";
 import EditSeries from "./EditSeries";
+import Sobre from "./Sobre";
 
 //funcional-staless compoment
-const About = () => <section className="intro-section"><h1>Sobre</h1></section>
 
 //Componente da tela que ira rendenizar
 class App extends Component {
@@ -24,18 +24,12 @@ class App extends Component {
     return (
       <Router>
       <div>
-        <nav
-          className="navbar navbar-default navbar-fixed-top"
-          role="navigation"
-        >
+        <nav className="barra-de-navegacao">
           <div className="container">
-            <div className="navbar-header page-scroll">
-              <a className="navbar-brand page-scroll" href="#page-top">
-                <img src="/images/logo.png" height="30" />
+              <a className="navbar-brand page-scroll">
+              <Link to="/"><img src="/images/logo.png" height="50" /></Link>
               </a>
-            </div>
-            <div className="collapse navbar-collapse navbar-ex1-collapse">
-              <ul className="nav navbar-nav">
+              <ul className="itens-barra-de-navegacao">
                 <li>
                   <Link to="/">Home</Link>
                 </li>
@@ -43,18 +37,19 @@ class App extends Component {
                   <Link to="/new">Nova Serie</Link>
                 </li>
                 <li>
-                  <Link to="/about">Sobre</Link>
+                  <Link to="/sobre">Sobre</Link>
                 </li>
               </ul>
-            </div>
             {/* Mostra apenas o conteudo exato */}
-            <Route exact path='/' component = {Home}/>
-            <Route path='/series-edit/:id' component = {EditSeries}/>
-            <Route path='/series/:genre' component = {Series}/>
-            <Route exact path='/about' component = {About}/>
-            <Route exact path='/new' component = {NewSeries}/>
           </div>
         </nav>
+        <main className="container">
+        <Route exact path='/' component = {Home}/>
+            <Route path='/series-edit/:id' component = {EditSeries}/>
+            <Route path='/series/:genre' component = {Series}/>
+            <Route exact path='/new' component = {NewSeries}/>
+            <Route exact path='/sobre' component = {Sobre}/>
+        </main>
       </div>
     </Router>
     );
