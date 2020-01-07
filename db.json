@@ -1,150 +1,150 @@
 {
-  "series": [
-    {
-      "id": 3,
-      "name": "Brooklyn Nine-Nine",
-      "status": "watching",
-      "genre": "Comédia",
-      "comments": ""
-    },
-    {
-      "name": "",
-      "status": "watched",
-      "genre": "",
-      "comments": "",
-      "id": 6
-    },
-    {
-      "name": "Atypical",
-      "status": "watched",
-      "genre": "Drama",
-      "comments": "",
-      "id": 7
-    },
-    {
-      "id": 9,
-      "name": "Santa Clarita Diet",
-      "status": "toWatch",
-      "genre": "Comédia",
-      "comments": ""
-    },
-    {
-      "name": "Anne with an E",
-      "status": "toWatch",
-      "genre": "Drama",
-      "comments": "",
-      "id": 10
-    },
-    {
-      "id": 11,
-      "name": "Vikings",
-      "status": "watching",
-      "genre": "Drama",
-      "comments": ""
-    },
-    {
-      "name": "Supergirl",
-      "status": "watched",
-      "genre": "Ação",
-      "comments": "",
-      "id": 13
-    },
-    {
-      "name": "Hanna",
-      "status": "watched",
-      "genre": "Ação",
-      "comments": "",
-      "id": 14
-    },
-    {
-      "name": "Slasher",
-      "status": "toWatch",
-      "genre": "Terror",
-      "comments": "",
-      "id": 15
-    },
-    {
-      "id": 16,
-      "name": "Z Nation",
-      "status": "toWatch",
-      "genre": "Terror",
-      "comments": ""
-    },
-    {
-      "id": 17,
-      "name": "Channel Zero",
-      "status": "toWatch",
-      "genre": "Terror",
-      "comments": ""
-    },
-    {
-      "name": "The Purge",
-      "status": "watching",
-      "genre": "Terror",
-      "comments": "",
-      "id": 18
-    },
-    {
-      "name": "Scream",
-      "status": "watched",
-      "genre": "Terror",
-      "comments": "",
-      "id": 19
-    },
-    {
-      "name": "Fortitude",
-      "status": "watched",
-      "genre": "Terror",
-      "comments": "",
-      "id": 20
-    },
-    {
-      "name": "Wynonna Earp",
-      "status": "toWatch",
-      "genre": "Terror",
-      "comments": "",
-      "id": 21
-    },
-    {
-      "name": "Rick and Morty",
-      "status": "watched",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 22
-    },
-    {
-      "name": "Good Girls",
-      "status": "watching",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 23
-    },
-    {
-      "name": "Superstore",
-      "status": "watched",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 24
-    },
-    {
-      "name": "Black Mirror",
-      "status": "watched",
-      "genre": "Drama",
-      "comments": "",
-      "id": 25
-    },
-    {
-      "name": "The Boys",
-      "status": "watched",
-      "genre": "Ação",
-      "comments": "",
-      "id": 26
-    }
-  ],
-  "genres": [
-    "Comédia",
-    "Drama",
-    "Ação",
-    "Terror"
-  ]
-}
+    "series": [
+      {
+        "id": 3,
+        "name": "Brooklyn Nine-Nine",
+        "status": "watching",
+        "genre": "Comédia",
+        "comments": ""
+      },
+      {
+        "name": "",
+        "status": "watched",
+        "genre": "",
+        "comments": "",
+        "id": 6
+      },
+      {
+        "name": "Atypical",
+        "status": "watched",
+        "genre": "Drama",
+        "comments": "",
+        "id": 7
+      },
+      {
+        "id": 9,
+        "name": "Santa Clarita Diet",
+        "status": "toWatch",
+        "genre": "Comédia",
+        "comments": ""
+      },
+      {
+        "name": "Anne with an E",
+        "status": "toWatch",
+        "genre": "Drama",
+        "comments": "",
+        "id": 10
+      },
+      {
+        "id": 11,
+        "name": "Vikings",
+        "status": "watching",
+        "genre": "Drama",
+        "comments": ""
+      },
+      {
+        "name": "Supergirl",
+        "status": "watched",
+        "genre": "Ação",
+        "comments": "",
+        "id": 13
+      },
+      {
+        "name": "Hanna",
+        "status": "watched",
+        "genre": "Ação",
+        "comments": "",
+        "id": 14
+      },
+      {
+        "name": "Slasher",
+        "status": "toWatch",
+        "genre": "Terror",
+        "comments": "",
+        "id": 15
+      },
+      {
+        "id": 16,
+        "name": "Z Nation",
+        "status": "toWatch",
+        "genre": "Terror",
+        "comments": ""
+      },
+      {
+        "id": 17,
+        "name": "Channel Zero",
+        "status": "toWatch",
+        "genre": "Terror",
+        "comments": ""
+      },
+      {
+        "name": "The Purge",
+        "status": "watching",
+        "genre": "Terror",
+        "comments": "",
+        "id": 18
+      },
+      {
+        "name": "Scream",
+        "status": "watched",
+        "genre": "Terror",
+        "comments": "",
+        "id": 19
+      },
+      {
+        "name": "Fortitude",
+        "status": "watched",
+        "genre": "Terror",
+        "comments": "",
+        "id": 20
+      },
+      {
+        "name": "Wynonna Earp",
+        "status": "toWatch",
+        "genre": "Terror",
+        "comments": "",
+        "id": 21
+      },
+      {
+        "name": "Rick and Morty",
+        "status": "watched",
+        "genre": "Comédia",
+        "comments": "",
+        "id": 22
+      },
+      {
+        "name": "Good Girls",
+        "status": "watching",
+        "genre": "Comédia",
+        "comments": "",
+        "id": 23
+      },
+      {
+        "name": "Superstore",
+        "status": "watched",
+        "genre": "Comédia",
+        "comments": "",
+        "id": 24
+      },
+      {
+        "name": "Black Mirror",
+        "status": "watched",
+        "genre": "Drama",
+        "comments": "",
+        "id": 25
+      },
+      {
+        "name": "The Boys",
+        "status": "watched",
+        "genre": "Ação",
+        "comments": "",
+        "id": 26
+      }
+    ],
+    "genres": [
+      "Comédia",
+      "Drama",
+      "Ação",
+      "Terror"
+    ]
+  }
