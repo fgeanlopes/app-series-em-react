@@ -44,6 +44,7 @@ class NewSeries extends Component{
             comments:this.refs.comments.value
         }
         api.saveSeries(NewSeries).then((res)=> {
+            console.log(NewSeries)
             //Quando for salvo, ira fazer 
             //redirecionamento para a pagina
             //de categoria cadastrada
