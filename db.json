@@ -139,6 +139,84 @@
       "genre": "Ação",
       "comments": "",
       "id": 26
+    },
+    {
+      "function (req, res) {\n  res.send(newSeries);\n  console.log(newSeries);\n}": "",
+      "id": 27
+    },
+    {
+      "function (req, res) {\n  res.send(newSeries);\n  console.log(newSeries);\n}": "",
+      "id": 28
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 29
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 30
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 31
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 32
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 33
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 34
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 35
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 36
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 37
+    },
+    {
+      "name": "testeti",
+      "status": "watched",
+      "genre": "Comédia",
+      "comments": "",
+      "id": 38
     }
   ],
   "genres": [

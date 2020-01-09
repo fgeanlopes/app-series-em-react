@@ -1,23 +1,15 @@
-// usado para criar o localhost
-// import axios from "axios";
+import axios from "axios";
+
 
 //Propriedade que define o url localhost.
 // //A PORTA 3001 esta sendo passada no json server
-// const api = axios.create({
-//   baseURL: "http://localhost:3001/"
-// });
-
-
-const express = require('express');
-const mongoose = require('mongoose');
-
-const api = express();
-
-mongoose.connect('mongodb+srv://bd_react:ZrvqIyBx7jWpszdR@cluster0-s4btv.mongodb.net/test?retryWrites=true&w=majority',{
-  userNewUrlParse: true,
+const api = axios.create({
+  baseURL: "https://my-json-server.typicode.com/fgeanlopes/json-series/"
 });
 
-
+// mongoose.connect('mongodb+srv://bd_react:ZrvqIyBx7jWpszdR@cluster0-s4btv.mongodb.net/test?retryWrites=true&w=majority',{
+//   userNewUrlParse: true,
+// });
 
 
 //Pega o genres(Categorias) no banco
@@ -28,11 +20,7 @@ export const loadSeriesByGenre = (genre) => api.get('series?genre='+genre)
 
 // Pega as informações passada pelo newSeries e salva 
 //no banco com metodo post, salva em 'series'
-// export const saveSeries = (newSeries) => api.post('series', newSeries)
-
-export const saveSeries = (newSeries) => api.post('series', function(req, res){
-  res.send(newSeries)
-})
+export const saveSeries = (newSeries) => api.post('series', newSeries)
 
 // Update series
 export const updateSeries = (series) => api.put('series/'+series.id, series)

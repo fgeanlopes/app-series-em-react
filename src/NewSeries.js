@@ -43,14 +43,10 @@ class NewSeries extends Component{
             genre:this.refs.genre.value,
             comments:this.refs.comments.value
         }
-        api.saveSeries(NewSeries).then((res)=> {
-            console.log(NewSeries)
-            //Quando for salvo, ira fazer 
-            //redirecionamento para a pagina
-            //de categoria cadastrada
+            // Preciso passar o NewSeries
+            api.saveSeries(NewSeries).then((res)=>{
             this.setState({
-                //OBS: refs ele esta pegando
-                //do valor do formulario
+                // ao salvar manda para a categoria relacionada
                 redirect:'/series/'+this.refs.genre.value
             });
         });
@@ -89,7 +85,7 @@ class NewSeries extends Component{
                         <div className="item-form">
                             <p>Comentários</p><textarea ref="comments" className="form-control"></textarea>
                         </div>
-                        <button type="button" onClick={this.saveSeries}>Salvar</button>
+                        <button disabled type="button" onClick={this.saveSeries}>Desativado</button>
                    </form>
                 </section> 
             </div>
