@@ -4,7 +4,7 @@ import axios from "axios";
 //Propriedade que define o url localhost.
 // //A PORTA 3001 esta sendo passada no json server
 const api = axios.create({
-  baseURL: "http://fgeanlopes.000webhostapp.com/app-minha-serie/?path=series"
+  baseURL: "http://fgeanlopes.000webhostapp.com/app-minha-serie/?path="
 });
 
 // mongoose.connect('mongodb+srv://bd_react:ZrvqIyBx7jWpszdR@cluster0-s4btv.mongodb.net/test?retryWrites=true&w=majority',{
